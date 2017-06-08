@@ -1,20 +1,26 @@
 {
   "name": "tdd-node",
   "version": "1.0.0",
-  "description": "",
+  "description": "tdd in node",
   "main": "index.js",
   "scripts": {
-    "test": "mocha lib/**/**.spec.js"
+    "test": "mocha --require co-mocha lib/**/**.spec.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "cristoaquiza",
   "license": "ISC",
   "devDependencies": {
     "chai": "^4.0.2",
-    "mocha": "^3.4.2"
+    "chai-as-promised": "^6.0.0",
+    "co-mocha": "^1.2.0",
+    "mocha": "^3.4.2",
+    "sinon": "^2.3.2",
+    "sinon-chai": "^2.10.0"
   },
   "dependencies": {
     "knex": "^0.13.0",
-    "pg": "^6.2.3"
+    "lodash": "^4.17.4",
+    "pg": "^6.2.3",
+    "winston": "^2.3.1"
   }
 }
